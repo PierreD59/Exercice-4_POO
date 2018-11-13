@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="fr">
 
 <head>
   <meta charset="utf-8">
@@ -22,26 +22,24 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
+  <select name="object" onchange="SortManager.sortTable(this.value)">
+    <option name="id" id="id" value="id">id</option>
+    <option name="Name" id="name" value="name">name</option>
+    <option name="age" id="age" value="age">age</option>
+    <option name="city" id="city" value="city">city</option>
+  </select>
 
-  <table id="table">
+  <table class="table">
     <tr>
-      <th>ID</th>
-      <th>Name</th>
-      <th>Age</th>
-      <th>City</th>
+      <th>id</th>
+      <th>name</th>
+      <th>age</th>
+      <th>city</th>
     </tr>
+    <tbody id="table">
+
+    </tbody>
   </table>
-
-  <form class="form-area" action="">
-    <select name="object">
-      <option value="ID" selected>ID</option>
-      <option value="Name">Name</option>
-      <option value="Age">Age</option>
-      <option value="City">City</option>
-    </select>
-    <input type="submit">
-  </form>
-
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
