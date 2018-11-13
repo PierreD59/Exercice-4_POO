@@ -47,10 +47,7 @@ let htmlManager = {
   },
   display: function (myObject) {
     htmlManager.createElementHTML(myObject);
-  }
-
-}
-let SortManager = {
+  },
 
   sortTable: function (user) {
     project.myObject.sort(function (a, b) {
